@@ -123,8 +123,11 @@ const Cadastro = () => {
       {/* Imagem */}
       <Image
         style={styles.image}
-        source={{ uri: 'https://via.placeholder.com/200' }}
+        source={{
+          uri: 'https://placeimg.com/200/300/any',
+        }}
       />
+
 
       {/* Botão para enviar o formulário */}
       <Button title="Enviar" onPress={validarCadastro} />
@@ -158,6 +161,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
     marginBottom: 12,
+    alignSelf: 'center',
   },
 });
 
